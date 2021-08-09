@@ -1,0 +1,49 @@
+version: '3.8'
+services:
+    php-apache-environment:
+        container_name: php-apache
+        build:
+            context: ./main
+            dockerfile: Dockerfile
+        depends_on:
+            - db
+        volumes:
+            - ./main/src:/var/www/html/
+            - /var/run/docker.sock:/var/run/docker.sock
+        ports:
+            - 80:80
+    db:
+        container_name: db
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: CokGizliParola
+            MYSQL_DATABASE: Users
+            MYSQL_USER: emr4h
+            MYSQL_PASSWORD: passwd
+        ports:
+            - 9906:3306
+    
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8080:80
+        restart: always
+        environment:
+            PMA_HOST: db
+        depends_on:
+            - db
+    
+    htmllab:
+        container_name: htmllab
+        build: 
+            context: ./main/src/htmlLab
+            dockerfile: Dockerfile
+        ports: 
+            - 9911:80
+
+    
+    
+    
+    
+    

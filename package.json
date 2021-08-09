@@ -1,0 +1,23 @@
+{
+  "name": "LetMeHack",
+  "version": "1.0.0",
+  "description": "LetMeHack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EkinYzc/LetMeHack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EkinYzc/LetMeHack/issues"
+  },
+  "homepage": "https://github.com/EkinYzc/LetMeHack#readme",
+  "dependencies": {
+    "redis": "^3.1.2"
+  }
+}
