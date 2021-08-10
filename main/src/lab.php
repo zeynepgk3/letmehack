@@ -1,5 +1,6 @@
 <?php
 session_start();
+$lab=$_GET['lab'];
 if(!isset($_SESSION['uid'])){
     $_SESSION['uid'] = md5(uniqid());
 }
