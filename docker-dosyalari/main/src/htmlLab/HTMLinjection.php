@@ -84,8 +84,9 @@
 <!-- PHP Kısmı -->
     <div id="sonuc">
         <?php
-        
-        if(isset($_GET["ad"]) && isset($_GET["soyad"])) {   
+
+
+            if(isset($_GET["ad"]) && isset($_GET["soyad"])) {   
             $ad = $_GET["ad"];
             $soyad = $_GET["soyad"];    
     

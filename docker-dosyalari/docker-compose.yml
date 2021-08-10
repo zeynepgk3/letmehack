@@ -12,6 +12,13 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock
         ports:
             - 80:80
+        stdin_open: true
+        tty: true
+        networks: 
+            - dbConnect
+            - netConnect
+
+
     db:
         container_name: db
         image: mysql
@@ -21,8 +28,9 @@ services:
             MYSQL_DATABASE: Users
             MYSQL_USER: emr4h
             MYSQL_PASSWORD: passwd
-        ports:
-            - 9906:3306
+        networks: 
+            - dbConnect
+
     
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
@@ -33,17 +41,10 @@ services:
             PMA_HOST: db
         depends_on:
             - db
-    
-    htmllab:
-        container_name: htmllab
-        build: 
-            context: ./main/src/htmlLab
-            dockerfile: Dockerfile
-        ports: 
-            - 9911:80
+        networks: 
+            - netConnect
 
-    
-    
-    
-    
-    
+networks: 
+    dbConnect:
+        internal: true
+    netConnect:
