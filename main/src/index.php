@@ -28,7 +28,7 @@ include "./layout/header.php";
             <h2 class="box-slide-title">Lab 1 adı</h2>
             <p class="box-slide-description">içerik</p>
             <p>
-              <a href="services.html" class="slider btn btn-primary">1.lab</a>
+            <a href="labs/sqlLab/sqli1/sqlindex.html" class="btn btn-outline-warning">Detaya Git</a>
             </p>
           </div>
 
