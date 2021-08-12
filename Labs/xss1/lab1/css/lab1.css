@@ -1,0 +1,72 @@
+
+body{
+
+    padding-top:200px;
+     font-family: Itim;
+     text-align:center;
+    
+      /* The image used */
+    background-image: url("love.jpg"  );
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.adam{
+
+     padding-bottom:50px;   
+     text-align:center;
+
+
+    
+   
+     
+
+
+
+}
+.calcu{
+
+    
+     text-align:center;
+    
+   
+}
+.love {
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:19px;
+	border:3px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 8px;
+	text-decoration:none;
+	text-shadow:-2px -1px 50px #cc9f52;
+}
+.love:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.love:active {
+	position:relative;
+	top:1px;
+}
+
+        
+     
+   
+     
+     
+
+
+ 
