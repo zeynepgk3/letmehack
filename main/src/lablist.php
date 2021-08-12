@@ -41,24 +41,6 @@ $categories = array(
     <div class="row">
       <div class="col-lg-12">
         <form method="GET" action="?">
-          <div class="d-flex my-3">
-            <?php
-            $checked = [];
-            $i = 0;
-            foreach ($categories as $cat) :
-              $i++;
-            ?>
-
-              <div class="form-check mx-3">
-                <input class="form-check-input" type="checkbox" value="" id="<?= "i" ?>">
-                <label class="form-check-label" for="kategori">
-                  <?php echo "$cat[name]" ?>
-                </label>
-              </div>
-            <?php endforeach; ?>
-          </div>
-          <!--filter end-->
-
           <div class="accordion accordion-group accordion-classic" id="construction-accordion">
             <div class="card">
               <?php
@@ -82,7 +64,7 @@ $categories = array(
                         <li class="list-group-item">
                           <div class="d-flex justify-content-between">
                             <span><?php echo "$lab" ?></span>
-                            <a href="<?php echo $lab?>.php" class="btn btn-outline-warning">Detaya Git</a>
+                            <a href="<?php echo $lab ?>.php" class="btn btn-outline-warning">Detaya Git</a>
                           </div>
                         </li>
                       <?php endforeach; ?>

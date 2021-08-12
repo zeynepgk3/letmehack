@@ -3,6 +3,8 @@ include "./layout/header.php";
 ?>
 
 <div class="banner-carousel banner-carousel-2 mb-0">
+  
+
   <div class="banner-carousel-item" style="background-image:url(assets/images/slider-main/bg5.jpg)">
     <div class="container">
       <div class="box-slider-content">
@@ -19,62 +21,21 @@ include "./layout/header.php";
   </div>
 
   <div class="banner-carousel-item" style="background-image:url(assets/images/slider-main/bg4.jpg)">
-    <div class="slider-content text-left">
-      <div class="container">
-
-        <div class="box-slider-content d-flex justify-content-left">
-
-          <div class="box-slider-text m-3">
-            <h2 class="box-slide-title">Lab 1 adı</h2>
-            <p class="box-slide-description">içerik</p>
-            <p>
-            <a href="labs/sqlLab/sqli1/sqlindex.html" class="btn btn-outline-warning">Detaya Git</a>
-            </p>
-          </div>
-
-          <div class="box-slider-text m-3">
-            <h2 class="box-slide-title">lab2 adı</h2>
-            <p class="box-slide-description">içerik</p>
-            <p>
-              <a href="services.html" class="slider btn btn-primary">2.lab</a>
-            </p>
-          </div>
-
-          <div class="box-slider-text m-3">
-            <h2 class="box-slide-title">lab3</h2>
-            <p class="box-slide-description">içerik</p>
-            <p>
-              <a href="services.html" class="slider btn btn-primary">3.lab</a>
-            </p>
-          </div>
-          <div class="box-slider-text m-3">
-            <h2 class="box-slide-title">Lab 4 adı</h2>
-            <p class="box-slide-description">içerik</p>
-            <p>
-              <a href="services.html" class="slider btn btn-primary">1.lab</a>
-            </p>
-          </div>
-
-          <div class="box-slider-text m-3">
-            <h2 class="box-slide-title">lab5 adı</h2>
-            <p class="box-slide-description">içerik</p>
-            <p>
-              <a href="services.html" class="slider btn btn-primary">2.lab</a>
-            </p>
-          </div>
-
-          <div class="box-slider-text m-3">
-            <p>
-              <a href="services.html" class="slider btn btn-primary">Tümü</a>
-            </p>
-          </div>
-
+    <div class="container">
+      <div class="box-slider-content">
+        <div class="box-slider-text">
+          <h2 class="box-slide-title">Biz kimiz?</h2>
+          <h3 class="box-slide-sub-title">153 - ISTEC Web Uygulamaları Güvenliği Takımı</h3>
+          <p class="box-slide-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo magni suscipit modi
+             ex exercitationem dolorem, sed quasi maiores tenetur deserunt praesentium porro earum neque autem repellat mollitia aperiam nisi non. 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In officia repellat consequatur odit necessitatibus placeat temporibus 
+            provident architecto quos praesentium nemo beatae explicabo minima molestias dolores quibusdam, nam obcaecati quas.</p>
 
         </div>
-
       </div>
     </div>
   </div>
+
 </div>
 
 <?php
