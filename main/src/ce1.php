@@ -58,7 +58,9 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>lab tanıtımı burada olacak tanıtım tanıtım</p>
+                            <p>lab tanıtımı burada olacak tanıtım tanıtım tanıtım tanıtım
+                                
+                            </p>
                         </div>
 
 

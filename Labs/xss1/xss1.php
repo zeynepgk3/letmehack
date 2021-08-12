@@ -5,7 +5,7 @@ XSS LAB 1
 -->
 <html>
 <head>
-<title>XSS LAB 1</title>
+<title>XSS LAB 111111</title>
 </head>
 <body>
 <form action='xss1.php' method='POST' id="xss1">
