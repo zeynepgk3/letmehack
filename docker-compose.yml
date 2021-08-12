@@ -30,6 +30,11 @@ services:
             MYSQL_PASSWORD: passwd
         networks: 
             - dbConnect
+        volumes:
+            - ./serverdatabase:/var/lib/mysql
+        ports:
+            - 3306:3306
+        
 
     
     phpmyadmin:
