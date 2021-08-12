@@ -8,7 +8,7 @@ XSS LAB 1
 <title>XSS LAB 1</title>
 </head>
 <body>
-<form action='lab1.php' method='POST' id="xss1">
+<form action='xss1.php' method='POST' id="xss1">
 <input type="text" id="xss" name="xss1-1"><br><br>
 <input type="submit" value="Submit">
 </form>

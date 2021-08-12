@@ -11,7 +11,7 @@ include "./layout/header.php";
                 <div class="comments-form border-box">
                     <h3 class="title-normal">Giriş Yap</h3>
 
-                    <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <form role="form" method="post" action="scripts/login.php">
                         <div class="row">
 
                             <div class="col-md-12">
@@ -37,14 +37,3 @@ include "./layout/header.php";
 
         </div><!-- Conatiner end -->
 </section><!-- Main container end -->
-
-<?php
-if ($_POST["password"] === $_POST["confirm_password"]) {
-    echo "<h1>doğru girdiniz</h1>";
-    }
-    else {
-        echo "yanlış girdiniz";
-}
-
-include "./layout/footer.php";
-?>

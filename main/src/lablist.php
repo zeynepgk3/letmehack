@@ -2,11 +2,11 @@
 include "layout/header.php";
 
 $categories = array(
-  array("name" => "Command Exe", "labs" => array("c1", "c2", "c3")),
-  array("name" => "File Injection", "labs" => array("f1", "f2", "f3")),
-  array("name" => "HTMLi", "labs" => array("h1", "h2", "h3")),
-  array("name" => "SQLi", "labs" => array("s1", "s2", "s3")),
-  array("name" => "XSS", "labs" => array("x1", "x2", "x3"))
+  array("name" => "Command Exe", "labs" => array("ce1", "ce2")),
+  array("name" => "File Injection", "labs" => array("fi1")),
+  array("name" => "HTMLi", "labs" => array("htmli1")),
+  array("name" => "SQLi", "labs" => array("sqli1", "sqli2")),
+  array("name" => "XSS", "labs" => array("xss1", "xss2", "xss3"))
 
 );
 
@@ -41,24 +41,6 @@ $categories = array(
     <div class="row">
       <div class="col-lg-12">
         <form method="GET" action="?">
-          <div class="d-flex my-3">
-            <?php
-            $checked = [];
-            $i = 0;
-            foreach ($categories as $cat) :
-              $i++;
-            ?>
-
-              <div class="form-check mx-3">
-                <input class="form-check-input" type="checkbox" value="" id="<?= "i" ?>">
-                <label class="form-check-label" for="kategori">
-                  <?php echo "$cat[name]" ?>
-                </label>
-              </div>
-            <?php endforeach; ?>
-          </div>
-          <!--filter end-->
-
           <div class="accordion accordion-group accordion-classic" id="construction-accordion">
             <div class="card">
               <?php
@@ -82,7 +64,7 @@ $categories = array(
                         <li class="list-group-item">
                           <div class="d-flex justify-content-between">
                             <span><?php echo "$lab" ?></span>
-                            <a href="lab.php?lab=<?php echo $lab ?>" class="btn btn-outline-warning">Detaya Git</a>
+                            <a href="<?php echo $lab ?>.php" class="btn btn-outline-warning">Detaya Git</a>
                           </div>
                         </li>
                       <?php endforeach; ?>

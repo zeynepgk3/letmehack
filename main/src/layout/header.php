@@ -15,7 +15,7 @@
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 
   <!-- CSS
 ================================================== -->
@@ -58,15 +58,7 @@
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav ml-auto align-items-center">
                       <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lablar<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="lablist.php">Tümü</a></li>
-                          <li><a href="projects.html">CE</a></li>
-                          <li><a href="projects-single.html">File Injection</a></li>
-                          <li><a href="projects.html">HTML</a></li>
-                          <li><a href="projects.html">SQL</a></li>
-                          <li><a href="projects.html">XSS</a></li>
-                        </ul>
+                      <a href="lablist.php" class="nav-link">Tüm Lablar</a>
                     </li>
                       <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Anasayfa</a></li> -->
 

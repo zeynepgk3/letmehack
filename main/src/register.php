@@ -11,12 +11,17 @@ include "./layout/header.php";
                 <div class="comments-form border-box">
                     <h3 class="title-normal">Kayıt Ol</h3>
 
-                    <form role="form" method="post" action="scripts/confirm.php">
+                    <form role="form" method="post" action="scripts/register.php">
                         <div class="row">
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name" class="w-100"><input class="form-control" name="name" id="name" placeholder="Ad Soyad" type="text" required></label>
+                                    <label for="name" class="w-100"><input class="form-control" name="firstname" id="firstname" placeholder="Ad" type="text" required></label>
+                                </div>
+                            </div><!-- Col 4 end -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="w-100"><input class="form-control" name="lastname" id="lastname" placeholder="Soyad" type="text" required></label>
                                 </div>
                             </div><!-- Col 4 end -->
 
@@ -55,8 +60,3 @@ include "./layout/header.php";
 
         </div><!-- Conatiner end -->
 </section><!-- Main container end -->
-
-<?php
-
-include "./layout/footer.php";
-?>

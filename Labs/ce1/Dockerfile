@@ -1,4 +1,4 @@
 FROM php:8-apache
-COPY authentication.php /var/www/html/authentication.php
+COPY ce1.php /var/www/html/ce1.php
 EXPOSE 80
 CMD [ "/usr/sbin/apache2ctl", "-D", "FOREGROUND" ]

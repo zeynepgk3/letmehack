@@ -3,17 +3,17 @@ session_start();
 if (!isset($_SESSION['uid'])) {
     $_SESSION['uid'] = md5(uniqid());
 }
-if (isset($_POST['htmllab1'])) {
+if (isset($_POST['fi1'])) {
     if ($_SESSION[$_SESSION['uid']]['up'] == 1) {
-        exec("sudo /usr/local/bin/docker rm -rf " . $_SESSION['uid'] . "-htmllab1", $output, $retval);
+        exec("sudo /usr/local/bin/docker rm -rf " . $_SESSION['uid'] . "-fi1", $output, $retval);
         $_SESSION[$_SESSION['uid']]['up'] = 0;
     } else {
-        exec("sudo /usr/local/bin/docker run --rm -d --name " . $_SESSION['uid'] . "-htmllab1 -p 0:80 htmllab", $output, $retval);
+        exec("sudo /usr/local/bin/docker run --rm -d --name " . $_SESSION['uid'] . "-fi1 -p 0:80 fi1", $output, $retval);
         $_SESSION[$_SESSION['uid']]['up'] = 1;
     }
 }
 if ($_SESSION[$_SESSION['uid']]['up']) {
-    exec("sudo /usr/local/bin/docker inspect --format='{{range \$p, \$conf := .NetworkSettings.Ports}}{{(index \$conf 0).HostPort}} {{end}}' " . $_SESSION['uid'] . "-htmllab1", $port, $retval);
+    exec("sudo /usr/local/bin/docker inspect --format='{{range \$p, \$conf := .NetworkSettings.Ports}}{{(index \$conf 0).HostPort}} {{end}}' " . $_SESSION['uid'] . "-fi1", $port, $retval);
 }
 ?>
 
@@ -34,7 +34,7 @@ include "./layout/header.php";
                         <div class="entry-header">
 
                             <h2 class="entry-title">
-                                Command Execution 1. Laboratuvar
+                                File Injection 1
                             </h2>
                             <!-- <div class="post-meta">
                                 <span class="post-author">
@@ -67,17 +67,17 @@ include "./layout/header.php";
 
                 <div class="comments-form border-box">
 
-                    <form action="?" name="htmllab1" method="POST">
+                    <form action="?" name="fi1" method="POST">
                         <div class="clearfix">
 
                             <?php
                             if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
-                                <button class="btn btn-success" type="submit" aria-label="post-comment" name="htmllab1">Labı Başlat</button>
+                                <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
                             <?php
                             } else {
                             ?>
-                                <button class="btn btn-danger" type="submit" aria-label="post-comment" name="htmllab1">Labı Kapat</button>
+                                <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
                             <?php
                             }
                             ?>
@@ -87,8 +87,8 @@ include "./layout/header.php";
                     <?php
                     if ($_SESSION[$_SESSION['uid']]['up']) {
                     ?>
-                        <p>Aşağıdaki linkten laba gidiniz:</p>
-                        <a target="_blank"href="http://localhost:<?php echo $port[0]; ?>/htmlinjection.php">http://localhost:<?php echo $port[0]; ?> </a>
+                        <h6>Aşağıdaki linkten laba gidiniz:</h6>
+                        <a target="_blank"href="http://localhost:<?php echo $port[0]; ?>/fi1.php">http://localhost:<?php echo $port[0]; ?> </a>
                     <?php
                     }
                     ?>
@@ -102,7 +102,7 @@ include "./layout/header.php";
             </div><!-- Content Col end -->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="post-media post-image">
-                    <img loading="lazy" src="https://lh3.googleusercontent.com/9g5WyEE7qRKxb3i5D15PeXw0jwhJQWRPgIy8T6R8FMgaZ-GWoOr3Q7U7OftG5gICOYo" class="img-fluid" alt="post-image">
+                    <img loading="lazy" src="assets/images/who.svg" class="img-fluid" alt="post-image">
                 </div>
             </div>
 
