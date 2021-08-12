@@ -27,7 +27,7 @@ Command Execution LAB 1
 </head>
 
 <body> 
-<img  style="text-align:center;" src="/lab22/img/who.svg" alt="Who is"  >
+<img  style="text-align:center;" src="lab1/img/who.svg" alt="Who is"  >
  <h1 class="font-weight-bold" style="text-align: center" >WHOIS domain lookup</h1> 
 
 <p style="text-align: center"> Search the WHOIS database to find key information about a domain</p> 
