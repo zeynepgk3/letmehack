@@ -290,7 +290,7 @@
     <h2 class="mb-5 font-weight-bold ">FEEDBACK FORM </h2>  
     <hr class="ayrac"> <i class="fas fa-leaf ibeyaz  "></i>
 <div class="container">    
-  <form action='index.php' method='POST' class="colmd10 text-left m-auto">    
+  <form action='xss3.php' method='POST' class="colmd10 text-left m-auto">    
     <div class="form-group row">    
       <div class="col-25">    
         <label for="fname">First Name</label>    
