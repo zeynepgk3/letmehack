@@ -71,16 +71,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 resimSlider" src=/img/sl1.jpg alt="slider1.">
+                <img class="d-block w-100 resimSlider" src=img/sl1.jpg alt="slider1.">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 resimSlider" src=/img/sl2.jpg alt="slider2">
+                <img class="d-block w-100 resimSlider" src=img/sl2.jpg alt="slider2">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 resimSlider" src="/img/sl3.jpg" alt="slider3">
+                <img class="d-block w-100 resimSlider" src="img/sl3.jpg" alt="slider3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -136,7 +136,7 @@
         <div class="row row-cols-1 row-cols-md-4 g-4  boyut ">
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/ekip1.jpg" class="card-img-top" alt="...">
+                    <img src="img/ekip1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -145,7 +145,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/ekip2.jpg" class="card-img-top" alt="...">
+                    <img src="img/ekip2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -154,7 +154,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/ekip3.jpg" class="card-img-top" alt="...">
+                    <img src="img/ekip3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -163,7 +163,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/ekip4.jpg" class="card-img-top" alt="...">
+                    <img src="img/ekip4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -197,7 +197,7 @@
         <div class="row row-cols-1 row-cols-md-4 g-4  boyut  ">
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r1.jpg" class="card-img-top" alt="...">
+                    <img src="img/r1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -206,7 +206,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r2.jpg" class="card-img-top" alt="...">
+                    <img src="img/r2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -224,7 +224,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r4.jpg" class="card-img-top" alt="...">
+                    <img src="img/r4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -233,7 +233,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r5.jpg" class="card-img-top" alt="...">
+                    <img src="img/r5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -242,7 +242,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r6.jpg" class="card-img-top" alt="...">
+                    <img src="img/r6.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -251,7 +251,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r7.jpg" class="card-img-top" alt="...">
+                    <img src="img/r7.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -260,7 +260,7 @@
             </div>
             <div class="col">
                 <div class="card shadow ekipCard">
-                    <img src="/img/r8.jpg" class="card-img-top" alt="...">
+                    <img src="img/r8.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
