@@ -3,9 +3,9 @@
 
     // Veri Tabanı İşlemleri
 
-    $servername = "localhost";
+    $servername = "sql_db";
     $username = "root";
-    $password = "";
+    $password = "CokGizliParola";
     $dbname = "letmehack_db";
 
     // Veri tabanı bağlantısı
