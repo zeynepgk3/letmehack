@@ -22,13 +22,13 @@ include "./layout/header.php";
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="password" class="w-100"><input class="form-control" id="password" placeholder="Parola" type="password" required></label>
+                                    <label for="password" class="w-100"><input class="form-control" name="password" id="password" placeholder="Parola" type="password" required></label>
                                 </div>
                             </div>
 
                         </div><!-- Form row end -->
                         <div class="clearfix">
-                            <button class="btn btn-primary" type="submit" aria-label="register">Giriş Yap</button>
+                            <button class="btn btn-primary" type="submit" aria-label="login">Giriş Yap</button>
                         </div>
                     </form><!-- Form end -->
                 </div><!-- Comments form end -->

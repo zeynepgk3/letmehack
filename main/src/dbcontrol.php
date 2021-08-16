@@ -5,16 +5,12 @@
 $host = 'db';
 
 // Database use name
-$user = 'emr4h';
+$user = 'root';
 
 //database user password
-$pass = 'passwd';
+$pass = 'CokGizliParola';
 
 // check the MySQL connection status
-$conn = new mysqli($host, $user, $pass);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else {
-    echo "Mysql veritabanı bağlantısı başarılı !";
-}
-?> 
+$conn = new mysqli($host, $user, $pass,"letmehack");
+
+?>

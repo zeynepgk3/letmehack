@@ -16,12 +16,12 @@ include "./layout/header.php";
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name" class="w-100"><input class="form-control" name="firstname" id="firstname" placeholder="Ad" type="text" required></label>
+                                    <label for="firstname" class="w-100"><input class="form-control" name="firstname" id="firstname" placeholder="Ad" type="text" required></label>
                                 </div>
                             </div><!-- Col 4 end -->
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name" class="w-100"><input class="form-control" name="lastname" id="lastname" placeholder="Soyad" type="text" required></label>
+                                    <label for="lastname" class="w-100"><input class="form-control" name="lastname" id="lastname" placeholder="Soyad" type="text" required></label>
                                 </div>
                             </div><!-- Col 4 end -->
 
@@ -39,7 +39,7 @@ include "./layout/header.php";
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="password" class="w-100"><input class="form-control" name="password" placeholder="Parola" type="password" required></label>
+                                    <label for="password" class="w-100"><input class="form-control" name="password" id="password" placeholder="Parola" type="password" required></label>
                                 </div>
                             </div>
 
