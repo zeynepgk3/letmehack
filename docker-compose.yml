@@ -25,11 +25,15 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: CokGizliParola
-            MYSQL_DATABASE: Users
             MYSQL_USER: emr4h
             MYSQL_PASSWORD: passwd
         networks: 
             - dbConnect
+        volumes:
+            - ./serverdatabase:/var/lib/mysql
+        ports:
+            - 3306:3306
+        
 
     
     phpmyadmin:

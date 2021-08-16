@@ -2,22 +2,38 @@
 $insert=NULL;
 $headers= True;
 $firstname=$_POST['firstname'];
-$surname=$_POST['surname'];
+$lastname=$_POST['lastname'];
+$nickname=$_POST['nickname'];
 $email=$_POST['email'];
 $password=$_POST['password'];
-$confirim=$_POST['confirim'];
+// $confirm=$_POST['confirm'];
 //DATABASE CONNECTION
-$conn=new mysqli('localhost','root','','letmehack');
+// $conn=new mysqli('localhost','root','CokGizliParola','letmehack');
+include "../dbcontrol.php";
+
 $password = sha1($password); //Password Encrypted
 if($conn->connect_error){
     die('Connection Failed:'.$conn->connect_error);
 }
 else{
+    echo "Mysql veritabanı bağlantısı başarılı! ";
     $vkey=sha1(time().$firstname);//Key
 }
     $password = sha1($password); //Password Encrypted
-    $stmt=$conn->prepare("insert into registration($firstname,$surname,$email,$password,$confirim,$vkey) values(?,?,?,?,?,?)");
-    $stmt->bind_param("s,s,s,i,i","$firstname,$surname,$email,$password,$confirim,$vkey");
+    echo $firstname,$lastname,$nickname,$email,$password;
+    $stmt=$conn->prepare("INSERT INTO users(firstname,lastname,nickname,email,passwd) VALUES(?,?,?,?,?)");
+    $stmt->bind_param("sssss",$firstname,$lastname,$nickname,$email,$password);
+
+
+    // $stmt=$conn->prepare("INSERT INTO users2($firstname) VALUES(?)");
+    // var_dump($stmt);
+    // $stmt->bind_param("s","$firstname");
+
+
+    // $stmt = $conn->prepare("INSERT INTO users2 (fn) VALUES (?)");
+    // $stmt->bind_param("s", $firstname);
+
+    // var_dump($stmt);
     $stmt->execute();
     echo "Registration Sucessfully";
     $stmt->close();
