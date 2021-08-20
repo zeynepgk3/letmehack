@@ -11,7 +11,7 @@ include "./layout/header.php";
                 <div class="comments-form border-box">
                     <h3 class="title-normal">Kayıt Ol</h3>
 
-                    <form role="form" method="post" action="scripts/register.php">
+                    <form role="form" method="post" accept-charset="utf-8" action="register_script.php">
                         <div class="row">
 
                             <div class="col-md-6">

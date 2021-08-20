@@ -1,7 +1,6 @@
 <?php
 include "./layout/header.php";
 ?>
-
 <section id="main-container" class="main-container">
     <div class="container">
         <div class="row">
@@ -11,7 +10,7 @@ include "./layout/header.php";
                 <div class="comments-form border-box">
                     <h3 class="title-normal">Giriş Yap</h3>
 
-                    <form role="form" method="post" action="scripts/login.php">
+                    <form role="form" method="post" accept-charset="utf-8" action="login_script.php">
                         <div class="row">
 
                             <div class="col-md-12">
@@ -37,3 +36,13 @@ include "./layout/header.php";
 
         </div><!-- Conatiner end -->
 </section><!-- Main container end -->
+<!-- <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+<!-- sweetalerti projeye dahil edince yukarıdaki gibi çalıştırırsın npm install sweetalert2 -->
+<script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="">Why do I have this issue?</a>'
+    })
+</script>

@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="assets/plugins/colorbox/colorbox.css">
   <!-- Template styles-->
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -61,7 +62,7 @@
                       <a href="lablist.php" class="nav-link">Tüm Lablar</a>
                     </li>
                       <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Anasayfa</a></li> -->
-
+                      
                       <li class="header-get-a-quote">
                           <a class="btn btn-primary" href="register.php">Kayıt</a>
                       </li>

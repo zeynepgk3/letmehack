@@ -31,6 +31,7 @@ services:
             - dbConnect
         volumes:
             - ./serverdatabase:/var/lib/mysql
+            - ./dbcustom.cnf:/etc/mysql/conf.d/custom.cnf
         ports:
             - 3306:3306
         

@@ -12,5 +12,4 @@ $pass = 'CokGizliParola';
 
 // check the MySQL connection status
 $conn = new mysqli($host, $user, $pass,"letmehack");
-
 ?>
