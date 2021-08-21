@@ -24,18 +24,20 @@ $isExistNick = mysqli_query($conn, "SELECT *FROM users  WHERE nickname='$nicknam
 if (mysqli_num_rows($isExistEmail) > 0) {
     $status = 'Bu mail ile zaten kayıt yapıldı. Tekrar deneyiniz';
     $status_icon = "fa-times";
+    $isRegistered=false;
 } else if (mysqli_num_rows($isExistNick) > 0) {
     $status = 'Bu nick kullanılıyor. Başka bir tane deneyiniz.';
     $status_icon = "fa-times";
+    $isRegistered=false;
 } else {
     $stmt = $conn->prepare("INSERT INTO users(firstname,lastname,nickname,email,passwd,vkey) VALUES(?,?,?,?,?,?)");
     $stmt->bind_param("ssssss", $firstname, $lastname, $nickname, $email, $password, $vkey);
     $stmt->execute();
     $status = 'Kayıt başarılı! Şimdi giriş yapabilirsin.';
+    $isRegistered=true;
     $status_icon = "fa-check";
     $stmt->close();
 }
-
 
 $conn->close();
 if (isset($_POST['register'])) {
@@ -78,9 +80,17 @@ if (isset($_POST['register'])) {
                         <br>
                         <h6><?php echo $status ?></h6>
                         <script>
-                            setTimeout(function() {
+                            let isRegistered=<?php echo $isRegistered ?>;
+                            if (isRegistered) {
+                                setTimeout(function() {
+                                    window.location="./index.php";
+                                }, 1500);
+                            }else{
+                                setTimeout(function() {
                                 window.history.back();
                             }, 3000);
+                            }
+                            
                         </script>
                     </div><!-- Comments form end -->
 
@@ -88,7 +98,5 @@ if (isset($_POST['register'])) {
 
             </div><!-- Conatiner end -->
     </section>
-
 </body>
-
 </html>
