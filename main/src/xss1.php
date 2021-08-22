@@ -116,7 +116,7 @@ include "./layout/header.php";
             </div><!-- Content Col end -->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="post-media post-image">
-                    <img loading="lazy" src="assets/images/who.svg" class="img-fluid" alt="post-image">
+                    <img loading="lazy" src="assets/images/xss_picture.png" class="img-fluid" alt="post-image" width="200" height="150">
                 </div>
             </div>
 
