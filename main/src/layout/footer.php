@@ -31,11 +31,11 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
             <h3 class="widget-title">Yapımcılar</h3>
             <ul class="list-arrow">
-              <li><a href="https://www.linkedin.com/in/ekin-yzc-0621b11b3/">Ekin Yazıcı</a></li>
-              <li><a href="https://www.linkedin.com/in/emr4h/">Emrah Yıldırım</a></li>
-              <li><a href="https://www.linkedin.com/in/ömer-keleş-377801175/">Ömer Keleş</a></li>
-              <li><a href="https://www.linkedin.com/in/tuğba-dölek/">Tuğba Dölek</a></li>
-              <li><a href="https://www.linkedin.com/in/zeynepgok/">Zeynep Gök</a></li>
+              <li><a href="https://www.linkedin.com/in/ekin-yzc-0621b11b3/" target="_blank">Ekin Yazıcı</a></li>
+              <li><a href="https://www.linkedin.com/in/emr4h/" target="_blank">Emrah Yıldırım</a></li>
+              <li><a href="https://www.linkedin.com/in/ömer-keleş-377801175/" target="_blank">Ömer Keleş</a></li>
+              <li><a href="https://www.linkedin.com/in/tuğba-dölek/" target="_blank">Tuğba Dölek</a></li>
+              <li><a href="https://www.linkedin.com/in/zeynepgok/" target="_blank">Zeynep Gök</a></li>
             </ul>
           </div><!-- Col end -->
         </div><!-- Row end -->
