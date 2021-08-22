@@ -35,6 +35,26 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+  <script>
+    function get_cookie(name) {
+      console.log("getcookie");
+      return document.cookie.split(';').some(c => {
+        return c.trim().startsWith(name + '=');
+      });
+    }
+
+    function delete_cookie(name, path, domain) {
+      console.log("delete cookie");
+      if (get_cookie(name)) {
+        document.cookie = name + "=" +
+          ((path) ? ";path=" + path : "") +
+          ((domain) ? ";domain=" + domain : "") +
+          ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+      }
+      location.reload();
+    }
+  </script>
+
 </head>
 
 <body>
@@ -61,8 +81,8 @@
 
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav ml-auto align-items-center">
-                    <li class="nav-item dropdown">
-                      <a href="lablist.php" class="nav-link">Tüm Lablar</a>
+                    <li class="nav-item dropdown mr-5">
+                      <a href="lablist.php" class="nav-link" style="color:#ffb600!important ">Tüm Lablar</a>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Anasayfa</a></li> -->
                     <?php if (isset($_COOKIE["userInfo"])) {
@@ -78,7 +98,7 @@
                       </li>
 
                       <li class="header-get-a-quote">
-                        <a class="btn btn-primary" href="logout.php">Çıkış</a>
+                        <button class="btn btn-danger" onclick="delete_cookie('userInfo')">Çıkış yap</button>
                       </li>
                     <?php
                     } else {

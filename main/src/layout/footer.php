@@ -8,13 +8,13 @@
             <p>Docker ile hazırlanmış web güvenliği eğitim platformudur. Proje içerisinde her bir lab kullanıcı oturumuna göre ayrı bir docker containerlarında çalışmaktadır. Böylelikle her kullanıcı kendisine atanan portta kendi container ‘ında labını çalıştırmakta olup güvenli bir ortam sağlanmaktadır. </p>
             <div class="footer-social">
               <ul>
-                <li><a href="https://www.facebook.com/istecenter-494753844352221/" aria-label="Facebook"><i
+                <li><a href="https://www.facebook.com/istecenter-494753844352221/" target="_blank" aria-label="Facebook"><i
                       class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/ISTECenter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <li><a href="https://twitter.com/ISTECenter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </li>
-                <li><a href="https://www.instagram.com/istecenter/" aria-label="Instagram"><i
+                <li><a href="https://www.instagram.com/istecenter/" target="_blank" aria-label="Instagram"><i
                       class="fab fa-instagram"></i></a></li>
-                <li><a href="https://github.com/istec-iuc/letmehack" aria-label="Github"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://github.com/istec-iuc/letmehack" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a></li>
               </ul>
             </div><!-- Footer social end -->
           </div><!-- Col end -->
@@ -24,7 +24,7 @@
             <div class="working-hours">
             LetMeHack platformu içerisinde 2 adet Command Execution, 1 adet File Inclusion,  1 adet Html Injection, 2 adet SQL Injection ve 3 adet XSS labı bulunmaktadır. 
               <br>
-              <img loading="lazy" width="200px" class="footer-logo" src="assets/images/footer-logo.png" alt="LetMeHack">
+              <img loading="lazy" width="200px" class="footer-logo" src="assets/images/footerlogo.png" alt="LetMeHack">
             </div>
           </div><!-- Col end -->
 
