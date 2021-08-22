@@ -58,7 +58,11 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>lab tanıtımı burada olacak tanıtım tanıtım</p>
+                            <p>File Inclusion Nedir ? <br>
+                            File Inclusion, yani dosya dahil etme saldırısı saldırganın hedef web sitesine bir dosya dahil etmesine ya da hedef web sitesinin kendinde olan ama sunmadığı bir dosyayı görüntüleyebilmesine denir. <br>
+                            Lab Açıklaması <br>
+                            Senden bu sefer bu zaafiyeti vereceğimiz sitede bulmanı istiyoruz. İyi şanslar :) <br>
+                            </p>
                         </div>
 
 

@@ -58,7 +58,11 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>lab tanıtımı burada olacak tanıtım tanıtım</p>
+                            <p>Command Execution Nedir ? <br>
+                            Komut enjeksiyonu, bir ana bilgisayar işletim sisteminde (OS) rastgele komutların yürütülmesini içeren bir siber saldırı türüdür. <br>
+                            Lab Açıklaması <br>
+                            Bu lab içerisinde size whois sorguları yapabileceğiniz bir site verdik, bu sitede alan adını yazıp sorguladığınızda o alan adı ile ilgili bilgileri görebiliyorsunuz. geçen seferkinden farklı olarak ufak birkaç önlem aldık ama sen bunları atlatırsın. Sana inanıyoruz, iyi şanslar :) <br>
+                            </p>
                         </div>
 
 

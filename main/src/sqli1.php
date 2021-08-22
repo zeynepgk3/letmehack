@@ -59,7 +59,11 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>SQL enjeksiyonu, veritabanınızı yok edebilecek kadar tehlikeli bir kod enjeksiyon tekniğidir. En yaygın web hackleme tekniklerinden biridir. Saldırganın kötü amaçlı kodu SQL ifadelerine web sayfası girişi yoluyla yerleştirilmesidir. Bu makinede bunun nasıl yapılacağını öğreneceksiniz. İyi Şanslar :)</p>
+                            <p>SQL Injection Nedir ? <br>
+                            SQL enjeksiyonu, kötü amaçlı kodun SQL ifadelerine web sayfası girişi yoluyla yerleştirilmesidir. En yaygın web hackleme tekniklerinden biridir. Veritabanınızı yok edebilecek bir kod enjeksiyon tekniğidir. <br>
+                            Lab Açıklaması <br>
+                            Sizden bu kadar tehlikeli olan bir açığı bulmanızı ve Hermonie adlı kullanıcının hesabına girmenizi istiyoruz. İyi şanslar :D <br>
+                            </p>
                         </div>
 
 

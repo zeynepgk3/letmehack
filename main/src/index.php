@@ -9,9 +9,9 @@ include "./layout/header.php";
     <div class="container">
       <div class="box-slider-content">
         <div class="box-slider-text">
-          <h2 class="box-slide-title">Sen de web güvenliği hakkında uygulamalar mı yapmak istiyorsun?</h2>
-          <h3 class="box-slide-sub-title">Burada istediğin kadar lab var!</h3>
-          <p class="box-slide-description">Diğer lablara erişmek için lütfen yana kaydırın</p>
+          <h2 class="box-slide-title">Sen de web güvenliği hakkında lab çözmek mi istiyorsun?</h2>
+          <h3 class="box-slide-sub-title">Burada istediğin kadar lab var !</h3>
+          <p class="box-slide-description">Diğer lablara erişmek için lütfen aşağıdaki butona tıklayınız</p>
           <p>
             <a href="lablist.php" class="slider btn btn-primary">Hemen Başla</a>
           </p>
@@ -26,10 +26,7 @@ include "./layout/header.php";
         <div class="box-slider-text">
           <h2 class="box-slide-title">Biz kimiz?</h2>
           <h3 class="box-slide-sub-title">153 - ISTEC Web Uygulamaları Güvenliği Takımı</h3>
-          <p class="box-slide-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo magni suscipit modi
-             ex exercitationem dolorem, sed quasi maiores tenetur deserunt praesentium porro earum neque autem repellat mollitia aperiam nisi non. 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In officia repellat consequatur odit necessitatibus placeat temporibus 
-            provident architecto quos praesentium nemo beatae explicabo minima molestias dolores quibusdam, nam obcaecati quas.</p>
+          <p class="box-slide-description">ISTEC ( IoT Security Test and Evaluation Center ) ‘in düzenlediği yaz dönemi staj programında bir araya gelmiş 5 kişilik bir ekipten oluşmaktayız. Her birimiz Bilgisayar Bilimleri alanlarında eğitimine devam etmekte olup Siber Güvenliğe ’de ayrıca bir ilgi duymaktayız. Bu staj döneminde ise Web Uygulamaları ve Güvenliği alanında çalışmalarda bulunup LetMeHack projesini oluşturduk. Her birimiz hakkında detaylı bilgiye sağ alt köşedeki Yapımcılar bölümünden ulaşabilirsiniz.</p>
 
         </div>
       </div>

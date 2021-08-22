@@ -58,7 +58,11 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>lab tanıtımı burada olacak tanıtım tanıtım</p>
+                            <p>HTML Injection Nedir ? <br>
+                            HTML Enjeksiyonu, bir saldırganın, diğer kullanıcılar tarafından görüntülenen web sayfalarına HTML kodu eklemesine izin veren bir güvenlik açığıdır. <br>
+                            Lab Açıklaması <br>
+                            Sana bir fal sitesi verdik. Adını ve soyadını giriyorsun ve isim falına bakıyor. Benden duymuş olma ama bu fallar çıkıyormuş diyorlar. Neyse konumuz bu değil, sitede yukarıda tanımını verdiğimiz zafiyeti bulabilir misin ? <br>
+                            </p>
                         </div>
 
 

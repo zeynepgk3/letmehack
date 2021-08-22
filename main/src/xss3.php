@@ -58,7 +58,11 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>lab tanıtımı burada olacak tanıtım tanıtım</p>
+                            <p>XSS Nedir ? <br>
+                            XSS (Cross Site Scripting) genellikle web uygulamalarında bulunan bir tür güvenlik açığıdır. Script kodları üzerinden (genelde javascript) bir web sayfasına saldırı yapılması sonucu oluşmaktadır. <br>
+                            Lab Açıklaması <br>
+                            Alt tarafı biraz değiştirdik biraz güvenlik önlemi koyduk o kadar. Diğer XSS lablarını yaptıysan bunuda yaparsın sen, iyi şanslar :) <br>
+                            </p>
                         </div>
 
 
