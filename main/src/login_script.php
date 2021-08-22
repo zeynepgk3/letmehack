@@ -16,19 +16,17 @@ if($_POST)
     //If result match $username and $password Table row must be 1 row
     if($res == 1)
     {
-        setcookie($row['vkey'],serialize($row), time()+3600);
-        // echo $_COOKIE[$row['firstname']];
-        $user_info=unserialize($_COOKIE[$row['vkey']]);
+        setcookie("userInfo",serialize($row), time()+3000);
         header("Location: ./index.php",TRUE,301);
     }
     else
     {
-        setcookie($row['vkey'],serialize($row), time()+3600);
-        $user_info=unserialize($_COOKIE[$row['vkey']]);
-
-
-        // echo $_COOKIE[$row['lastname']];
         echo "Invalid Username or Password";
+        ?>
+        <script>
+            window.history.back();
+        </script>
+        <?php
     }
 }
 ?>

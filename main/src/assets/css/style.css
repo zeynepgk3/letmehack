@@ -498,7 +498,7 @@ a[href^=tel] {
 }
 
 .btn-primary,
-.btn-dark {
+.btn-dark, .btn-danger {
   border: 0;
   border-radius: 3px;
   padding: 12px 20px 10px;
@@ -512,7 +512,7 @@ a[href^=tel] {
 
 @media (max-width: 767px) {
   .btn-primary,
-  .btn-dark {
+  .btn-dark, .btn-danger {
     font-size: 13px;
   }
 }
@@ -526,12 +526,17 @@ a[href^=tel] {
   background: #ffb600;
 }
 
+.btn-danger {
+  background: #ff2600;
+}
+
 .btn-dark {
-  background: #23282d;
+  background: #505253;
 }
 
 .btn-primary:hover,
 .btn-dark:hover,
+.btn-danger:hover,
 .btn-white.btn-primary:hover {
   background: #111;
   color: #fff;
@@ -1184,6 +1189,7 @@ ul.navbar-nav > li > a {
 }
 
 /* Get a quote */
+.header-get-a-quote .btn-danger
 .header-get-a-quote .btn-primary {
   padding: 12px 25px !important;
   font-size: 13px;
@@ -1195,17 +1201,20 @@ ul.navbar-nav > li > a {
 }
 
 @media (max-width: 1200px) {
+  .header-get-a-quote .btn-danger,
   .header-get-a-quote .btn-primary {
     padding: 12px !important;
   }
 }
 
 @media (max-width: 991px) {
+  .header-get-a-quote .btn-danger,
   .header-get-a-quote .btn-primary {
     padding: 12px 30px !important;
   }
 }
 
+.header-get-a-quote .btn-danger:hover,
 .header-get-a-quote .btn-primary:hover {
   background: #272d33;
   color: #ffb600 !important;

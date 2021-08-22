@@ -70,17 +70,26 @@ include "./layout/header.php";
                     <form action="?" name="ce2" method="POST">
                         <div class="clearfix">
 
-                            <?php
-                            if (!$_SESSION[$_SESSION['uid']]['up']) {
+                        <?php
+                            if (@$_COOKIE['userInfo']) {
+                                if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
-                                <button class="btn btn-success" type="submit" aria-label="post-comment" name="ce2">Labı Başlat</button>
-                            <?php
+                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
+                                <?php
+                                } else {
+                                ?>
+                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
+                                <?php
+                                }
                             } else {
-                            ?>
-                                <button class="btn btn-danger" type="submit" aria-label="post-comment" name="ce2">Labı Kapat</button>
+                                ?>
+                                <h4 style="color:#ff2600">Önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
                             <?php
+
                             }
+
                             ?>
+                            
                         </div>
                     </form>
                     <br><br><br>

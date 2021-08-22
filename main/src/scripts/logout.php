@@ -1,0 +1,3 @@
+<?php
+    setcookie("userInfo",null);
+?>

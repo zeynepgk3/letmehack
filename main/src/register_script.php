@@ -14,7 +14,7 @@ if ($conn->connect_error) {
     die('Connection Failed:' . $conn->connect_error);
 } else {
     // echo "Mysql veritabanı bağlantısı başarılı! ";
-    $vkey = sha1(time() . $firstname); //Key
+    // $vkey = sha1(time() . $firstname); //Key
 }
 $password = sha1($password); //Password Encrypted
 $isExistEmail = mysqli_query($conn, "SELECT *FROM users  WHERE email='$email'");
@@ -30,8 +30,8 @@ if (mysqli_num_rows($isExistEmail) > 0) {
     $status_icon = "fa-times";
     $isRegistered=false;
 } else {
-    $stmt = $conn->prepare("INSERT INTO users(firstname,lastname,nickname,email,passwd,vkey) VALUES(?,?,?,?,?,?)");
-    $stmt->bind_param("ssssss", $firstname, $lastname, $nickname, $email, $password, $vkey);
+    $stmt = $conn->prepare("INSERT INTO users(firstname,lastname,nickname,email,passwd) VALUES(?,?,?,?,?)");
+    $stmt->bind_param("sssss", $firstname, $lastname, $nickname, $email, $password);
     $stmt->execute();
     $status = 'Kayıt başarılı! Şimdi giriş yapabilirsin.';
     $isRegistered=true;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -35,51 +36,73 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
+
 <body>
   <div class="body-inner">
 
-<!-- Header start -->
-<header id="header" class="header-two">
-  <div class="site-navigation">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+    <!-- Header start -->
+    <header id="header" class="header-two">
+      <div class="site-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg navbar-light p-0">
-                
+
                 <div class="logo">
-                    <a class="d-block" href="index.php">
-                      <h1>LetMeHack</h1>
-                    </a>
+                  <a class="d-block" href="index.php">
+                    <h1>LetMeHack</h1>
+                  </a>
                 </div><!-- logo end -->
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
+
                 <div id="navbar-collapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav ml-auto align-items-center">
-                      <li class="nav-item dropdown">
+                  <ul class="nav navbar-nav ml-auto align-items-center">
+                    <li class="nav-item dropdown">
                       <a href="lablist.php" class="nav-link">Tüm Lablar</a>
                     </li>
-                      <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Anasayfa</a></li> -->
-                      
+                    <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Anasayfa</a></li> -->
+                    <?php if (isset($_COOKIE["userInfo"])) {
+                    ?>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link disabled" style="color:blue">
+                          <?php
+                          $userInfo = unserialize($_COOKIE['userInfo']);
+                          echo $userInfo["nickname"];
+                          ?>
+                        </a>
+                      </li>
+
                       <li class="header-get-a-quote">
-                          <a class="btn btn-primary" href="register.php">Kayıt</a>
+                        <a class="btn btn-primary" href="logout.php">Çıkış</a>
+                      </li>
+                    <?php
+                    } else {
+                    ?>
+                      <li class="header-get-a-quote">
+                        <a class="btn btn-primary" href="register.php">Kayıt</a>
                       </li>
                       <li class="header-get-a-quote">
                         <a class="btn btn-primary" href="login.php">Giriş</a>
-                    </li>
-                    </ul>
+                      </li>
+                    <?php
+                    }
+                    ?>
+                  </ul>
                 </div>
               </nav>
+            </div>
+            <!--/ Col end -->
           </div>
-          <!--/ Col end -->
+          <!--/ Row end -->
         </div>
-        <!--/ Row end -->
-    </div>
-    <!--/ Container end -->
+        <!--/ Container end -->
 
-  </div>
-  <!--/ Navigation end -->
-</header>
-<!--/ Header end -->
+      </div>
+      <!--/ Navigation end -->
+    </header>
+    <!--/ Header end -->
