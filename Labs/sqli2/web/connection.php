@@ -3,7 +3,7 @@
 
     // Veri Tabanı İşlemleri
 
-    $servername = "sql_db3";
+    $servername = "sql_db2";
     $username = "root";
     $password = "CokGizliParola";
     $dbname = "letmehack_db";

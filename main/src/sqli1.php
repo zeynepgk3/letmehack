@@ -8,7 +8,8 @@ if (isset($_POST['sqli1'])) {
         exec("sudo /usr/local/bin/docker rm -rf " . $_SESSION['uid'] . "-sqli1", $output, $retval);
         $_SESSION[$_SESSION['uid']]['up'] = 0;
     } else {
-        exec("sudo /usr/local/bin/docker run --rm -d --name " . $_SESSION['uid'] . "-sqli1 -p 0:80 sqli1", $output, $retval);
+        exec("sudo /usr/local/bin/docker run --rm -d --name sql_db sql_db");
+        exec("sudo /usr/local/bin/docker run --rm -d --name " . $_SESSION['uid'] . "-sqli1 -p 0:80 --link sql_db:db sqli1", $output, $retval);
         $_SESSION[$_SESSION['uid']]['up'] = 1;
     }
 }
@@ -58,7 +59,7 @@ include "./layout/header.php";
 
                             </blockquote> -->
 
-                            <p>lab tanıtımı burada olacak tanıtım tanıtım</p>
+                            <p>SQL enjeksiyonu, veritabanınızı yok edebilecek kadar tehlikeli bir kod enjeksiyon tekniğidir. En yaygın web hackleme tekniklerinden biridir. Saldırganın kötü amaçlı kodu SQL ifadelerine web sayfası girişi yoluyla yerleştirilmesidir. Bu makinede bunun nasıl yapılacağını öğreneceksiniz. İyi Şanslar :)</p>
                         </div>
 
 

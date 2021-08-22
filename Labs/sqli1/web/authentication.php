@@ -1,18 +1,13 @@
 
 <?php
-    include('connection.php');  
+    include('connection.php');
 
-    function security($input) {
-
-        return addslashes($input);
-    }
 
     if(isset($_POST["form"]))   
     {
-        $username = security( $_POST["kullaniciAdi"] );
-        
-        $password = security( $_POST["parola"] );
-        
+        $username = $_POST["kullaniciAdi"];
+     
+        $password = $_POST["parola"];
        
 		
         $sql = "select * from Users where username = '$username' and passwd = '$password'";         

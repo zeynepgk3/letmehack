@@ -1,0 +1,4 @@
+FROM mysql
+ENV MYSQL_DATABASE letmehack_db
+ENV MYSQL_ROOT_PASSWORD CokGizliParola
+COPY ./sql-scripts/ /docker-entrypoint-initdb.d/

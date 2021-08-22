@@ -4,4 +4,4 @@ RUN apt-get update && apt-get upgrade -y
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 COPY ./authentication.php /var/www/html/authentication.php
 COPY ./connection.php /var/www/html/connection.php
-COPY ./sqli1.php /var/www/html/sqli1.php
+COPY ./sqli2.php /var/www/html/sqli2.php
