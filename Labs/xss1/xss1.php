@@ -36,7 +36,7 @@ XSS LAB 1
 </div>
 
 
-<form class="calcu"; action='lab1.php' method='POST' id="xss1">
+<form class="calcu"; action='#' method='POST' id="xss1">
 <input type="text" id="xss" name="xss1-1"><br><br>
 <input type="submit" class="love " value="Calculate Love">
 </form>
