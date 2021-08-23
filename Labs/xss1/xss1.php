@@ -12,7 +12,7 @@ XSS LAB 1
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="lab1/css/lab1.css">
+    <link rel="stylesheet" href="./lab1/css/lab1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
@@ -28,7 +28,7 @@ XSS LAB 1
 <body>
 
 <div class="adam">
-      <img   src="lab1/img/logo.svg" alt="Love"  >
+      <img   src="./lab1/img/logo.svg" alt="Love"  >
         </div>
 
 <div class="calcu">
