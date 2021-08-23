@@ -78,11 +78,11 @@ include "./layout/header.php";
                             if (@$_COOKIE['userInfo']) {
                                 if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
-                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
+                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="ce2">Labı Başlat</button>
                                 <?php
                                 } else {
                                 ?>
-                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
+                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="ce2">Labı Kapat</button>
                                 <?php
                                 }
                             } else {

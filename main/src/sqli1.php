@@ -79,16 +79,16 @@ include "./layout/header.php";
                             if (@$_COOKIE['userInfo']) {
                                 if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
-                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
+                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="sqli1">Labı Başlat</button>
                                 <?php
                                 } else {
                                 ?>
-                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
+                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="sqli1">Labı Kapat</button>
                                 <?php
                                 }
                             } else {
                                 ?>
-                                <h4 style="color:#ff2600">Önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
+                                <h4 style="color:#ff2600">Çözmeye başlamadan önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
                             <?php
 
                             }

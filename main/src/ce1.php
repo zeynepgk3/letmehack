@@ -55,13 +55,10 @@ include "./layout/header.php";
                                 <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<cite>-
                                         Anger Mathe</cite></p>
-
                             </blockquote> -->
 
-                            <p>Command Execution Nedir ? <br>
-                            Komut enjeksiyonu, bir ana bilgisayar işletim sisteminde (OS) rastgele komutların yürütülmesini içeren bir siber saldırı türüdür. <br>
-                            Lab Açıklaması <br>
-                            Size whois sorguları yapabileceğiniz bir site verdik, bu sitede alan adını yazıp sorguladığınızda o alan adı ile ilgili bilgileri görebiliyorsunuz. Şimdi ise bu lab içerisinde bu açığı tetiklemenizi bekliyoruz. İyi şanslar :) <br> 
+                            <p>lab tanıtımı burada olacak tanıtım tanıtım tanıtım tanıtım
+
                             </p>
                         </div>
 
@@ -74,28 +71,37 @@ include "./layout/header.php";
                     <form action="?" name="ce1" method="POST">
                         <div class="clearfix">
 
-                        <?php
+                            <?php
+                            if (isset($_COOKIE['userInfo'])) {
                                 if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
-                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
+                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="ce1">Labı Başlat</button>
                                 <?php
                                 } else {
                                 ?>
-                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
+                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="ce1">Labı Kapat</button>
                                 <?php
                                 }
-                          
+                            } else {
+                                ?>
+                                <h4 style="color:#ff2600">Çözmeye başlamadan önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
+                            <?php
+
+                            }
 
                             ?>
+
                         </div>
                     </form>
                     <br><br><br>
                     <?php
-                    if ($_SESSION[$_SESSION['uid']]['up']) {
+                    if (isset($_COOKIE['userInfo'])) {
+                        if ($_SESSION[$_SESSION['uid']]['up']) {
                     ?>
-                        <h6>Aşağıdaki linkten laba gidiniz:</h6>
-                        <a target="_blank"href="http://localhost:<?php echo $port[0]; ?>/ce1.php">http://localhost:<?php echo $port[0]; ?> </a>
+                            <h6>Aşağıdaki linkten laba gidiniz:</h6>
+                            <a target="_blank" href="http://localhost:<?php echo $port[0]; ?>/ce1.php">http://localhost:<?php echo $port[0]; ?> </a>
                     <?php
+                        }
                     }
                     ?>
 
@@ -108,7 +114,7 @@ include "./layout/header.php";
             </div><!-- Content Col end -->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="post-media post-image">
-                    <img loading="lazy" src="assets/images/who.svg" class="img-fluid" alt="post-image" width="200" height="150">
+                    <img loading="lazy" src="assets/images/who.svg" class="img-fluid" alt="post-image">
                 </div>
             </div>
 

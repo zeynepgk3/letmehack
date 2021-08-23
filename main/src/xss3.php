@@ -59,9 +59,9 @@ include "./layout/header.php";
                             </blockquote> -->
 
                             <p>XSS Nedir ? <br>
-                            XSS (Cross Site Scripting) genellikle web uygulamalarında bulunan bir tür güvenlik açığıdır. Script kodları üzerinden (genelde javascript) bir web sayfasına saldırı yapılması sonucu oluşmaktadır. <br>
-                            Lab Açıklaması <br>
-                            Alt tarafı biraz değiştirdik biraz güvenlik önlemi koyduk o kadar. Diğer XSS lablarını yaptıysan bunuda yaparsın sen, iyi şanslar :) <br>
+                                XSS (Cross Site Scripting) genellikle web uygulamalarında bulunan bir tür güvenlik açığıdır. Script kodları üzerinden (genelde javascript) bir web sayfasına saldırı yapılması sonucu oluşmaktadır. <br>
+                                Lab Açıklaması <br>
+                                Alt tarafı biraz değiştirdik biraz güvenlik önlemi koyduk o kadar. Diğer XSS lablarını yaptıysan bunuda yaparsın sen, iyi şanslar :) <br>
                             </p>
                         </div>
 
@@ -74,26 +74,26 @@ include "./layout/header.php";
                     <form action="?" name="xss3" method="POST">
                         <div class="clearfix">
 
-                        <?php
+                            <?php
                             if (@$_COOKIE['userInfo']) {
                                 if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
-                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
+                                    <button class="btn btn-success" type="submit" aria-label="post-comment" name="xss3">Labı Başlat</button>
                                 <?php
                                 } else {
                                 ?>
-                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
+                                    <button class="btn btn-danger" type="submit" aria-label="post-comment" name="xss3">Labı Kapat</button>
                                 <?php
                                 }
                             } else {
                                 ?>
-                                <h4 style="color:#ff2600">Önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
+                                <h4 style="color:#ff2600">Çözmeye başlamadan önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
                             <?php
 
                             }
 
                             ?>
-                            
+
                         </div>
                     </form>
                     <br><br><br>
@@ -101,7 +101,7 @@ include "./layout/header.php";
                     if ($_SESSION[$_SESSION['uid']]['up']) {
                     ?>
                         <h6>Aşağıdaki linkten laba gidiniz:</h6>
-                        <a target="_blank"href="http://localhost:<?php echo $port[0]; ?>/xss3.php">http://localhost:<?php echo $port[0]; ?> </a>
+                        <a target="_blank" href="http://localhost:<?php echo $port[0]; ?>/xss3.php">http://localhost:<?php echo $port[0]; ?> </a>
                     <?php
                     }
                     ?>

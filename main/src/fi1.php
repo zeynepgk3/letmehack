@@ -59,9 +59,9 @@ include "./layout/header.php";
                             </blockquote> -->
 
                             <p>File Inclusion Nedir ? <br>
-                            File Inclusion, yani dosya dahil etme saldırısı saldırganın hedef web sitesine bir dosya dahil etmesine ya da hedef web sitesinin kendinde olan ama sunmadığı bir dosyayı görüntüleyebilmesine denir. <br>
-                            Lab Açıklaması <br>
-                            Senden bu sefer bu zaafiyeti vereceğimiz sitede bulmanı istiyoruz. İyi şanslar :) <br>
+                                File Inclusion, yani dosya dahil etme saldırısı saldırganın hedef web sitesine bir dosya dahil etmesine ya da hedef web sitesinin kendinde olan ama sunmadığı bir dosyayı görüntüleyebilmesine denir. <br>
+                                Lab Açıklaması <br>
+                                Senden bu sefer bu zaafiyeti vereceğimiz sitede bulmanı istiyoruz. İyi şanslar :) <br>
                             </p>
                         </div>
 
@@ -75,6 +75,7 @@ include "./layout/header.php";
                         <div class="clearfix">
 
                             <?php
+                            if (@$_COOKIE['userInfo']) {
                                 if (!$_SESSION[$_SESSION['uid']]['up']) {
                             ?>
                                     <button class="btn btn-success" type="submit" aria-label="post-comment" name="fi1">Labı Başlat</button>
@@ -84,9 +85,15 @@ include "./layout/header.php";
                                     <button class="btn btn-danger" type="submit" aria-label="post-comment" name="fi1">Labı Kapat</button>
                                 <?php
                                 }
-                            
+                            } else {
+                                ?>
+                                <h4 style="color:#ff2600">Çözmeye başlamadan önce giriş yapmalısınız. <a style="text-decoration:none; color:#ffb600" href="login.php">Giriş Yap</a></h4>
+                            <?php
+
+                            }
 
                             ?>
+
                         </div>
                     </form>
                     <br><br><br>
