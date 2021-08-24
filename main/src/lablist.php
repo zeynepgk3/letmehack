@@ -15,7 +15,7 @@ $categories = array(
 
 </script>
 
-<div id="banner-area" class="banner-area" style="background-image:url(assets/images/banner/banner0.jpg)">
+<div id="banner-area" class="banner-area" style="background-image:url(assets/images/banner0.jpg)">
   <div class="banner-text">
     <div class="container">
       <div class="row">

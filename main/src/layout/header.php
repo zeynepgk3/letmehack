@@ -81,8 +81,11 @@
 
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav ml-auto align-items-center">
-                    <li class="nav-item dropdown mr-5">
+                    <li class="nav-item dropdown">
                       <a href="lablist.php" class="nav-link" style="color:#ffb600!important ">Tüm Lablar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <p>         </p>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Anasayfa</a></li> -->
                     <?php if (isset($_COOKIE["userInfo"])) {
@@ -98,16 +101,16 @@
                       </li>
 
                       <li class="header-get-a-quote">
-                        <button class="btn btn-danger" onclick="delete_cookie('userInfo')">Çıkış yap</button>
+                        <button class="btn btn-danger" onclick="delete_cookie('userInfo')">Çıkış Yap</button>
                       </li>
                     <?php
                     } else {
                     ?>
                       <li class="header-get-a-quote">
-                        <a class="btn btn-primary" href="register.php">Kayıt</a>
+                        <button class="btn btn-primary"><a href="register.php">Kayıt</a></button>
                       </li>
                       <li class="header-get-a-quote">
-                        <a class="btn btn-primary" href="login.php">Giriş</a>
+                      <button class="btn btn-primary"><a href="login.php">Giriş</a></button>
                       </li>
                     <?php
                     }

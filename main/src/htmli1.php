@@ -12,7 +12,7 @@ if (isset($_POST['htmli1'])) {
         $_SESSION[$_SESSION['uid']]['up'] = 1;
     }
 }
-if ($_SESSION[$_SESSION['uid']]['up']) {
+if (isset($_SESSION[$_SESSION['uid']]['up'])) {
     exec("sudo /usr/local/bin/docker inspect --format='{{range \$p, \$conf := .NetworkSettings.Ports}}{{(index \$conf 0).HostPort}} {{end}}' " . $_SESSION['uid'] . "-htmli1", $port, $retval);
 }
 ?>
@@ -76,7 +76,7 @@ include "./layout/header.php";
 
                         <?php
                             if (@$_COOKIE['userInfo']) {
-                                if (!$_SESSION[$_SESSION['uid']]['up']) {
+                                if (!isset($_SESSION[$_SESSION['uid']]['up'])) {
                             ?>
                                     <button class="btn btn-success" type="submit" aria-label="post-comment" name="htmli1">Labı Başlat</button>
                                 <?php
@@ -98,11 +98,13 @@ include "./layout/header.php";
                     </form>
                     <br><br><br>
                     <?php
-                    if ($_SESSION[$_SESSION['uid']]['up']) {
+                    if (isset($_COOKIE['userInfo'])) {
+                        if (isset($_SESSION[$_SESSION['uid']]['up'])) {
                     ?>
-                        <h6>Aşağıdaki linkten laba gidiniz:</h6>
-                        <a target="_blank"href="http://localhost:<?php echo $port[0]; ?>/htmlinjection.php">http://localhost:<?php echo $port[0]; ?> </a>
+                            <h6>Aşağıdaki linkten laba gidiniz:</h6>
+                            <a target="_blank" href="http://localhost:<?php echo $port[0]; ?>/htmlinjection.php">http://localhost:<?php echo $port[0]; ?> </a>
                     <?php
+                        }
                     }
                     ?>
 
